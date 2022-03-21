@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+    <h1>My Webpage</h1>
+    <form action="../fact">
+      <label for="input_num">Enter the number</label>
+      <input type="number" id="input_num" name="input_num"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+{% if factorial %}
+    <body>
+	  <h3>{{ factorial }}</h3>
+    </body>
+{% endif %}
+</html>
